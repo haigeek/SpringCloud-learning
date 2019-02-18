@@ -6,10 +6,16 @@
 
     <groupId>com.haigeek</groupId>
     <artifactId>spring-cloud-learning</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>app-eureka-server</module>
+        <module>app-eureka-client</module>
+        <module>app-eureka-consumer</module>
+        <module>app-eureka-consumer-feign</module>
+        <module>app-eureka-consumer-feign</module>
+        <module>app-eureka-consumer-ribbon</module>
     </modules>
 
     <!-- 第一步：添加Springboot的parent -->

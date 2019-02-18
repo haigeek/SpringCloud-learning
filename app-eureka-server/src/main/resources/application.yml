@@ -1,10 +1,14 @@
 # 主配置文件主要用来存放公共设置，不受环境配置影响
 server:
-  port: 8081 # 指定端口号
-  context-path: /eureka-server # 指定访问资源的根路径
+  port: 8001 # 指定端口号
 eureka:
   instance:
     hostname: 127.0.0.1
   client:
     fetch-registry: false
     register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+spring:
+  application:
+    name: eureka-server
